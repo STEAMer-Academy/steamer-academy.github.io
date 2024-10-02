@@ -27,7 +27,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.9.0",
-    "lucide-react": "^0.446.0",
+    "lucide-react": "^0.447.0",
     "path-to-regexp": "^6.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
