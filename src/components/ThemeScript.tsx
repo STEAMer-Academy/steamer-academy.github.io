@@ -1,12 +1,18 @@
-import { useEffect } from "react";
+// components/ThemeScript.tsx
+"use client";
 
+import { useEffect } from "react";
+import "@/app/globals.css";
 const ThemeScript = () => {
   useEffect(() => {
     // Function to apply the theme based on saved preferences or defaults
     const applyTheme = () => {
       // Check for saved theme in localStorage
       const savedTheme = localStorage.getItem("theme");
-      const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)")
+        .matches
+        ? "dark"
+        : "light";
 
       // Determine the theme to use
       const currentTheme = savedTheme || preferredTheme;
@@ -51,4 +57,3 @@ const ThemeScript = () => {
 };
 
 export default ThemeScript;
-
