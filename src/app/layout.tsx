@@ -30,7 +30,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       </head>
       <body className="antialiased">
         {children}
-        <GoogleAnalytics gaId="G-DD3FHBDSP0" />
+        <script type="text/partytown">
+          <GoogleAnalytics gaId="G-DD3FHBDSP0" />
+        </script>
       </body>
     </html>
   );
