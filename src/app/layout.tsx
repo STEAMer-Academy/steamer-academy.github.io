@@ -2,6 +2,7 @@ import { ReactNode } from "react";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import type { Metadata, Viewport } from "next";
+import { Partytown } from "@builder.io/partytown/react";
 
 export const metadata: Metadata = {
   title: "STEAMer Academy",
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <head>
         <link rel="preconnect" href="https://www.google-analytics.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <Partytown debug={true} forward={['dataLayer.push']} />
       </head>
       <body className="antialiased">
         {children}
